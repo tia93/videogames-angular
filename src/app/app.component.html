@@ -1,0 +1,10 @@
+<h1>{{title}}</h1>
+
+<div [style.border-color]="videogame.color" *ngFor="let videogame of videogamesArray" class="vg-card">
+<span>{{videogame.name}}</span>
+<span>{{videogame.pubDate}}</span>
+<span>{{videogame.sHouse}}</span>
+<span>{{videogame.genre}}</span>
+</div>
+
+<router-outlet></router-outlet>
