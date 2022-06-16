@@ -16,8 +16,7 @@ export class AppComponent implements OnInit{
     this.videogamesArray = VIDEOGAMES;
   }
   ngOnInit(): void {
-    console.log(VIDEOGAMES);
-    
+   
   }
  
 }

@@ -1,0 +1,6 @@
+<div class="container">
+    <button class="button" (click)="orderByDate()">Order By Date</button>
+    <button class="button" (click)="orderByName()">Order By Name</button>
+    <button class="button" (click)="orderBySHouse()">Order By Software House</button>
+<app-videogame-list-element *ngFor="let videogame of videogames" [videogame]="videogame"></app-videogame-list-element>
+</div>
