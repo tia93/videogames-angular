@@ -18,27 +18,16 @@ export class VideogameListComponent implements OnInit {
   }
 
   orderByDate(){
-    VIDEOGAMES.sort(function(a,b){
-      if(a.pubDate < b.pubDate) {return -1; }
-      if(a.pubDate > b.pubDate) {return 1; }
-      return 0
-    }) 
-    }
+      this.videogames.sort(VideogameClass.compareByDate)
+  }
+    
 
   orderByName(){
-    VIDEOGAMES.sort(function(a,b){
-      if(a.name < b.name) {return -1; }
-      if(a.name > b.name) {return 1; }
-      return 0
-    })
+    this.videogames.sort(VideogameClass.compareByName)
   }
 
   orderBySHouse(){
-    VIDEOGAMES.sort(function(a,b){
-      if(a.sHouse < b.sHouse) {return -1; }
-      if(a.sHouse > b.sHouse) {return 1; }
-      return 0
-    })
+    this.videogames.sort(VideogameClass.compareBySHous)
   }
 
 
