@@ -5,6 +5,7 @@ export class VideogameClass {
     sHouse: string;
     genre: Genre;
     private _outOfProdution?: number
+    isInProduction:boolean = true
 
     constructor(name: string, pubDate: Date = new Date(), sHouse: string, genre: Genre = Genre.PLATFORM ){
         this.name = name;
@@ -41,6 +42,7 @@ export class VideogameClass {
         const now = new Date()
         this._outOfProdution = now.getTime()
     }
+
 
 }
 

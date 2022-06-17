@@ -4,5 +4,7 @@
     <span>{{videogame.pubDate}}</span>
     <span>{{videogame.sHouse}}</span>
     <span>{{videogame.genre}}</span>
+    <span>{{videogame.isInProduction}}</span>
+    <div *ngIf="!videogame.isInProduction" class="red-dot"></div>
     <button (click)="videogameOutOfproduce()">Out produce</button>
     </div>

@@ -30,6 +30,9 @@ export class VideogameListComponent implements OnInit {
     this.videogames.sort(VideogameClass.compareBySHous)
   }
 
+  dismissVideogame(videogame: VideogameClass){
+    videogame.isInProduction = false
+  }
 
 }
 

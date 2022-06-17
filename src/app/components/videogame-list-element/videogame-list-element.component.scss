@@ -7,4 +7,15 @@
     margin: 8px;
     padding: 8px;
     gap: 2px;
+    position: relative;
+}
+
+.red-dot{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border-radius: 50%;
+    background-color: red;
+    width: 15px;
+    height: 15px;
 }
